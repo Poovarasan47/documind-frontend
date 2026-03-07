@@ -10,6 +10,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatMenuModule } from '@angular/material/menu';
 import { DocumentResponse, DocumentService } from '../../core/services/document';
 import { AuthService } from '../../core/services/auth';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -282,6 +283,7 @@ export class DashboardComponent implements OnInit {
   authService = inject(AuthService);
   private documentService = inject(DocumentService);
   private snackBar = inject(MatSnackBar);
+  private router = inject(Router);
   
   documents = signal<DocumentResponse[]>([]);
   loading = signal(false);
@@ -359,7 +361,7 @@ export class DashboardComponent implements OnInit {
         window.URL.revokeObjectURL(url);
         this.snackBar.open('Download started!', 'Close', { duration: 2000 });
       },
-      error: (err) => {
+      error: () => {
         this.snackBar.open('Download failed', 'Close', { duration: 3000 });
       }
     });
@@ -372,7 +374,7 @@ export class DashboardComponent implements OnInit {
           this.snackBar.open('Document deleted', 'Close', { duration: 2000 });
           this.loadDocuments();
         },
-        error: (err) => {
+        error: () => {
           this.snackBar.open('Delete failed', 'Close', { duration: 3000 });
         }
       });
@@ -380,9 +382,8 @@ export class DashboardComponent implements OnInit {
   }
   
   viewDetails(doc: DocumentResponse) {
-    // Will implement in Day 6
-    this.snackBar.open('Details view - Coming in Day 6!', 'Close', { duration: 2000 });
-  }
+  this.router.navigate(['/document', doc.id]);
+}
   
   formatFileSize(bytes: number): string {
     return this.documentService.formatFileSize(bytes);
