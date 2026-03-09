@@ -1,59 +1,38 @@
-# DocumindFrontend
+# 🤖 DocuMind AI - Frontend
+AI-powered document management system with an intelligent chat interface.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+## 🌍 Live Demo
+**Application:** [https://documind-frontend-rust.vercel.app](https://documind-frontend-rust.vercel.app)  
+**Backend API:** [https://documind-backend-production-3e92.up.railway.app](https://documind-backend-production-3e92.up.railway.app)
 
-## Development server
+## 🌟 Features
+- **Smart Upload** - Drag & drop document upload with real-time progress tracking.
+- **AI Auto-Processing** - Documents are automatically summarized and classified by Gemini 1.5 Flash upon upload.
+- **Chat Interface** - ChatGPT-like experience to ask context-aware questions about your specific documents.
+- **Modern UI** - Built with Angular Material for a clean, responsive, and professional look.
+- **Secure** - Implements JWT-based authentication with robust Angular Route Guards.
 
-To start a local development server, run:
+## 🛠️ Tech Stack
+- **Framework:** Angular 19+ (utilizing Signals & Standalone Components)
+- **Language:** TypeScript 5
+- **Styling:** Angular Material, SCSS, Bootstrap
+- **State Management:** RxJS for reactive data handling
+- **Deployment:** Vercel
 
-```bash
-ng serve
-```
+## 🎨 Key UI Components
+- **Dashboard:** Visual overview of all uploaded documents and their AI-generated categories.
+- **AI Chat Hub:** A dedicated space for real-time document interrogation.
+- **Auth System:** Secure Login/Signup forms with custom Reactive Form validation.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<img width="1366" height="725" alt="Sign Up" src="https://github.com/user-attachments/assets/8eab7b13-eb7c-40c3-b7bc-ce2beb42b4e7" />
+<img width="1366" height="723" alt="Login" src="https://github.com/user-attachments/assets/4560bbf9-8c9f-4756-9b6b-729f9f2f9672" />
+<img width="1366" height="723" alt="Dashboard" src="https://github.com/user-attachments/assets/de9d2ed6-f48e-4927-95ee-e7d198406205" />
+<img width="1366" height="723" alt="Chat" src="https://github.com/user-attachments/assets/94b7f804-a3ef-43fa-bac4-c7b64ff331c9" />
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+**Connect with me:**
+🔗 [LinkedIn Profile](https://linkedin.com/in/poovarasan-k-dev)  
+💻 [GitHub Profile](https://github.com/Poovarasan47)
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+*Built with passion for AI and modern web architecture.*
